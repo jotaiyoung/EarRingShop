@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mybatis.example.BlogMapper">
+	
+	<select id="selectEarringList" parameterType="com.shop.vo.EarringVO" resultType="com.shop.vo.EarringVO">
+		select * from product
+	</select>
+	
+	<!-- <select id="idchk" parameterType="String" resultType="com.ict.service.VO">
+		select * from members where id = #{id}	
+	</select>	
+	
+	<insert id="join" parameterType="com.ict.service.VO">
+		insert into members(idx,id,pw,name,age,addr) values(members_swq.nextval, #{id},#{pw},#{name},#{age},#{addr})
+	</insert>
+	
+	<delete id="delete" parameterType="String">
+		delete from members where idx=#{idx}
+	</delete> -->
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

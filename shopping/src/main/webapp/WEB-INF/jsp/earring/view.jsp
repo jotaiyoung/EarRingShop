@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<div>
+	<table border="1">
+		<tbody>
+			<tr>
+				<th>
+					상품이름
+				</th>
+				<td>
+					${resultInfo.name}
+				</td>
+			</tr>
+			<tr>
+				<th>
+					상품코드
+				</th>
+				<td>
+					${resultInfo.code}
+				</td>
+			</tr>
+			<tr>
+				<th>
+					상품카테고리
+				</th>
+				<td>
+					${resultInfo.category}
+				</td>
+			</tr>
+			<tr>
+				<th>
+					상품가격
+				</th>
+				<td>
+					${resultInfo.price}
+				</td>
+			</tr>
+			<tr>
+				<th>
+					상품등록일자
+				</th>
+				<td>
+					${resultInfo.regist_date}
+				</td>
+			</tr>
+			<tr>
+				<th>
+					상품상세
+				</th>
+				<td>
+					${resultInfo.contents}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

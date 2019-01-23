@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/decorators">
+
+	<decorator name="frt_layout" page="/WEB-INF/jsp/include/layout.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<!-- excludes는 사용하지 않을 패턴을 지정한다 -->
+    <excludes>
+    	<pattern>/index</pattern>
+    </excludes> 
+	
+</decorators>
