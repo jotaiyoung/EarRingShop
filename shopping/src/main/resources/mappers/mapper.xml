@@ -6,17 +6,17 @@
 		select * from product
 	</select>
 	
-	<!-- <select id="idchk" parameterType="String" resultType="com.ict.service.VO">
-		select * from members where id = #{id}	
-	</select>	
+	<select id="selectEarringInfo" parameterType="com.shop.vo.EarringVO" resultType="com.shop.vo.EarringVO">
+        SELECT * from product where pid = #{pid}
+    </select>
 	
-	<insert id="join" parameterType="com.ict.service.VO">
+	<!-- <insert id="join" parameterType="com.ict.service.VO">
 		insert into members(idx,id,pw,name,age,addr) values(members_swq.nextval, #{id},#{pw},#{name},#{age},#{addr})
 	</insert>
 	
 	<delete id="delete" parameterType="String">
 		delete from members where idx=#{idx}
-	</delete> -->
+	</delete> --> 
 
 </mapper>
 

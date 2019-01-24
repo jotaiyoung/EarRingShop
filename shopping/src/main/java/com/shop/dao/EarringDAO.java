@@ -9,15 +9,13 @@ import com.shop.common.MybatisAbstractDAO;
 import com.shop.vo.EarringVO;
 
 @Repository
-public class EarringDAO extends MybatisAbstractDAO{	
-	
+public class EarringDAO extends MybatisAbstractDAO{		
 	
 	public List<EarringVO> selectEarringList(EarringVO vo){
-		
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>"+vo);
 		return selectList("selectEarringList", vo);
-		
-		 
-		
+	}
+	
+	public EarringVO selectEarringInfo(EarringVO vo){
+		return (EarringVO) selectOne("selectEarringInfo", vo);		
 	}
 }

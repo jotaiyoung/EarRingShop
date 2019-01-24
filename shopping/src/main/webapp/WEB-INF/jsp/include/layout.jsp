@@ -16,8 +16,8 @@
 		div.body {text-align: center; width: 100%}
 		div.top {
 			width: 100%;
-			background-color: #3E3E3E; 
-			color: #E7E7E7; 
+			background-color: #B40404; 
+			color: #FFFFFF; 
 			font-weight: bold;
 			padding: 10px 0;
 			text-align: center; 
@@ -28,12 +28,21 @@
 		div.header{width: 1000px; padding: 30px 0;}
 		div.header .header-1 {display: block;padding: 10px 0;height: 20px;}
 		div.header .header-1 .header-1-right {float: right;}
-		div.header .header-gnb {
-			display: block;
+		div.header .header-gnb {		
+			position: relative;		
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
 			padding: 10px 0;
 			border-top: 1px solid #3E3E3E;
 			border-bottom: 1px solid #3E3E3E;
-		}
+			align-items: center;
+			justify-content: space-around;
+			text-decoration: none;
+  			letter-spacing: 2px;			
+			
+		}	
+		
 		div.contents{ min-height: 500px;width: 1000px;}
 		div.footer{height: 300px;width: 100%;border-top: 1px solid #3E3E3E;}
 		div.footer .order-info {

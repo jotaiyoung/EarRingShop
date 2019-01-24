@@ -2,14 +2,14 @@
 
 <div class="top">
 	<div class="top-1">
-		<div class="top-left">
+		<div class="top-right">
 			<a href="#">JOIN US</a>
 			<a href="#">LOGIN</a>
 			<a href="#">MYPAGE</a>
 			<a href="#">CART</a>
 			<a href="#">ORDER</a>
 		</div>
-		<div class="top-right">
+		<div class="top-left">
 			<a href="#">CATEGORIES</a>
 		</div>
 	</div>

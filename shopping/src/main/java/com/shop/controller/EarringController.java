@@ -23,10 +23,17 @@ public class EarringController {
 	public String list(EarringVO vo, Model model) throws Exception{
 		
 		List<EarringVO> result = service.selectEarringList(vo);
-		model.addAttribute("resultList", result);
+		model.addAttribute("resultList", result);		
 		
+		return "/earring/list";		
+	}
+	
+	@RequestMapping(value ="/view")	
+	public String view(EarringVO vo, Model model) throws Exception{
 		
-		return "/earring/list";
+		EarringVO result = service.selectEarringInfo(vo);
+		model.addAttribute("resultInfo", result);
 		
+		return "/earring/view";		
 	}
 }

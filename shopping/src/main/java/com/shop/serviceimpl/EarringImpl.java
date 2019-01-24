@@ -22,5 +22,11 @@ public class EarringImpl implements EarringService {
 		return earDAO.selectEarringList(vo);
 	}
 
+	@Override
+	public EarringVO selectEarringInfo(EarringVO vo) {
+		// TODO Auto-generated method stub
+		return earDAO.selectEarringInfo(vo);
+	}
+
 	
 }
