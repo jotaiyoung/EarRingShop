@@ -3,11 +3,11 @@
 <mapper namespace="org.mybatis.example.BlogMapper">
 	
 	<select id="selectEarringList" parameterType="com.shop.vo.EarringVO" resultType="com.shop.vo.EarringVO">
-		select * from product
+		select * from product_ear
 	</select>
 	
 	<select id="selectEarringInfo" parameterType="com.shop.vo.EarringVO" resultType="com.shop.vo.EarringVO">
-        SELECT * from product where pid = #{pid}
+        SELECT * from product_ear where pid = #{pid}
     </select>
 	
 	<!-- <insert id="join" parameterType="com.ict.service.VO">
