@@ -3,7 +3,6 @@ package com.shop.controller;
 
 
 import java.io.File;
-import java.io.IOException;
 
 import javax.annotation.Resource;
 
@@ -26,16 +25,17 @@ public class UploadController {
 
 	@RequestMapping(value="/upload/uploadForm", method=RequestMethod.GET)
 	public void uploadForm(){
-		
+		System.out.println("uploadPath :: " + uploadPath);
 	}
 	
 	@RequestMapping(value="/upload/uploadForm", method=RequestMethod.POST)
 	public ModelAndView uplodForm(ModelAndView mav, MultipartFile file) throws Exception{
+		
 		logger.info("fileName" + file.getOriginalFilename());
 		logger.info("fileSize" + file.getSize());
 		logger.info("contentType" + file.getContentType());
 		
-		String saveName =file.getOriginalFilename();
+		String saveName = file.getOriginalFilename();
 		
 		File target= new File(uploadPath,saveName);
 		
