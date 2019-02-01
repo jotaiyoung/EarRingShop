@@ -18,13 +18,11 @@ public class EarringImpl implements EarringService {
 
 	@Override
 	public List<EarringVO> selectEarringList(EarringVO vo) {
-		// TODO Auto-generated method stub
 		return earDAO.selectEarringList(vo);
 	}
 
 	@Override
 	public EarringVO selectEarringInfo(EarringVO vo) {
-		// TODO Auto-generated method stub
 		return earDAO.selectEarringInfo(vo);
 	}
 
