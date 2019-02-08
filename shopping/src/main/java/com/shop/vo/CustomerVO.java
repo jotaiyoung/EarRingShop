@@ -1,16 +1,23 @@
 package com.shop.vo;
 
+import javax.persistence.Entity;
+import javax.validation.constraints.NotEmpty;
+
+@Entity
 public class CustomerVO {
 
 	private int customerid; 
+	@NotEmpty(message="아이디를 입력해주세요")
 	private String id;
 	private String name;
+	@NotEmpty(message="비밀번호를 입력해주세요")
 	private String password;
 	private String postcode;
-	private String address;
+	private String address1;
 	private String address2;
 	private String phone;
 	private String email;
+	private Boolean rememberId;
 	
 	
 	public int getCustomerid() {
@@ -24,6 +31,12 @@ public class CustomerVO {
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+	public Boolean getRememberId() {
+		return rememberId;
+	}
+	public void setRememberId(Boolean rememberId) {
+		this.rememberId = rememberId;
 	}
 	public String getName() {
 		return name;
@@ -43,11 +56,11 @@ public class CustomerVO {
 	public void setPostcode(String postcode) {
 		this.postcode = postcode;
 	}
-	public String getAddress() {
-		return address;
+	public String getAddress1() {
+		return address1;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddress1(String address1) {
+		this.address1 = address1;
 	}
 	public String getAddress2() {
 		return address2;

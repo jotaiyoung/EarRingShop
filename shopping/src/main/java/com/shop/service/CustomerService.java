@@ -10,7 +10,7 @@ public interface CustomerService  {
 
 	public List<CustomerVO> selectCustomerList(CustomerVO custVO);
 	
-	 
+	public int insertCustomer(CustomerVO custVO);  
 	
 	
 	

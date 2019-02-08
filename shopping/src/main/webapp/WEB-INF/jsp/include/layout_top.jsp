@@ -3,8 +3,8 @@
 <div class="top">
 	<div class="top-1">
 		<div class="top-right">
-			<a href="#">JOIN US</a>
-			<a href="#">LOGIN</a>
+			<a href="/customer/insert">JOIN US</a>
+			<a href="/login/loginForm">LOGIN</a>
 			<a href="#">MYPAGE</a>
 			<a href="#">CART</a>
 			<a href="#">ORDER</a>

@@ -13,7 +13,11 @@ import com.shop.vo.EarringVO;
 public class CustomerDAO extends MybatisAbstractDAO{
 	
 	public List<CustomerVO> selectAll(CustomerVO custVO){
-		return selectList("selectAll",custVO);
+		return selectList("selectAll",custVO);		
+	}
+	
+	public int insertCustomer(CustomerVO custVO){
+		return insertCustomer(custVO);
 		
 	}
 }

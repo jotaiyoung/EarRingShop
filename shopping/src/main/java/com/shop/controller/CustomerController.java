@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.shop.service.CustomerService;
 import com.shop.vo.CustomerVO;
@@ -26,4 +27,26 @@ public class CustomerController {
 		return "/customer/list";
 		
 	}
+	
+	@RequestMapping(value="/insert", method=RequestMethod.GET)
+	public String insert(CustomerVO custVO){
+		
+		return "/customer/insert";
+		
+	}
+	
+	@RequestMapping(value="/insert", method=RequestMethod.POST)
+	public String insertCustomer(CustomerVO custVO){
+		
+		service.insertCustomer(custVO);
+		
+		return "/customer/insert";
+		
+	}
+	
+	
+	
+	
+	
+	
 }

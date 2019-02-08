@@ -17,6 +17,11 @@
 		select * from customer
 	</select>
 	
+	<insert id="insertCustomer" parameterType="com.shop.vo.CustomerVO">
+		INSERT INTO CUSTOMER(ID, NAME, PASSWORD, POSTCODE, ADDRESS1, ADDRESS2, PHONE, EMAIL) VALUES (#{id}, #{name}, #{password}, #{postcode}, #{address1}, #{address2}, #{phone}, #{email})
+	
+	</insert>
+	
 	
 	
 	<!-- <insert id="join" parameterType="com.ict.service.VO">

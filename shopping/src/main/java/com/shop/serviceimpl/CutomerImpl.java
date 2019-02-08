@@ -19,6 +19,12 @@ public class CutomerImpl implements CustomerService {
 	public List<CustomerVO> selectCustomerList(CustomerVO custVO) {
 		// TODO Auto-generated method stub
 		return custDAO.selectAll(custVO);
+	}
+
+	@Override
+	public int insertCustomer(CustomerVO custVO) {
+		// TODO Auto-generated method stub
+		return (Integer) custDAO.insert("insertCustomer", custVO);
 	}	
 	
 }
